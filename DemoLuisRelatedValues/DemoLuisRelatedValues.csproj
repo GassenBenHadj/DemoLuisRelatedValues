@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AssemblyName>DemoLuisRelatedValues</AssemblyName>
+    <RootNamespace>DemoLuisRelatedValues</RootNamespace>
+    <Authors>Gassen BEN HADJ</Authors>
+    <Description>Demo of AI in order to get related values to a word(s) using Microsoft Luis</Description>
+    <PackageTags>NLP, AI, Luis, C#</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Luis.RelatedValues" Version="2.1.1" />
+  </ItemGroup>
+
+</Project>
