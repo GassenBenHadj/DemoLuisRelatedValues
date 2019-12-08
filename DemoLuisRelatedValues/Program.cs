@@ -16,7 +16,7 @@ namespace DemoLuisRelatedValues
             {
                 AppId = "<App Key>",
                 VersionId = "<App version e.g 0.1>",
-                SubsKey = "<Luis Subscription Key>",
+                SubsKey = "<Luis Primary key>",
                 //this is only used when you have already the ID
                 PhraseListId = "<Luis PhaseList ID>",
                 Endpoint = Region.WestEurope
