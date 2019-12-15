@@ -26,7 +26,7 @@ namespace DemoLuisRelatedValues
             //// This step is one Time only to get a phaselist ID in order to use it as param for the  RelatedValuesAsync method
             ////CreatePhaseListAsync method doesn't need the PhraseListId as property in the luisParams object
             ////In case of lost of the phaseListID you can use the overrided method of CreatePhaseListAsync by passing a name for your phaselist. exmaple .CreatePhaseListAsync("phaseListTest")
-            //var phaseListID = await luis.CreatePhaseListAsync();
+            //int phaseListID = await luis.CreatePhaseListAsync();
             //Console.WriteLine(phaseListID);
             
             while (repeat)
@@ -46,12 +46,18 @@ namespace DemoLuisRelatedValues
                 }
                 Console.WriteLine("Give us the number of Top elements");
                 int number = int.Parse(Console.ReadLine());
-
-                Console.WriteLine("++++++++++++++++The related Values++++++++++++++++++");
                 
-                //RelatedValuesAsync method take as params keywords wich is List<string> and number of related values to get as result
-                //keywords could be one to * but, more that it better to give a list of maximum 3
-                var response = await luis.RelatedValuesAsync(keywords, number);
+                /*
+                RelatedValuesAsync and StrongValuesAsync method take as params keywords wich is List<string> and number of related values
+                to return as result.
+                keywords could be one to * but,it better to give a list of maximum 3 words
+                */
+                
+                //Console.WriteLine("++++++++++++++++The related Values++++++++++++++++++");
+                //List<string> response = await luis.RelatedValuesAsync(keywords, number);
+
+                Console.WriteLine("++++++++++++++++The connected Values++++++++++++++++++");
+                List<string> response = await luis.StrongValuesAsync(keywords, number);
 
 
                 foreach (var item in response)
