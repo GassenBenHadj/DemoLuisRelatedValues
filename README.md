@@ -4,7 +4,7 @@ related values is an IA nuget package written in c# and based on Microsoft *Lang
 ## 2 steps to use Related Values
 
 - Initialization
-- Untrestanding and using the methods
+- Understanding and using the methods
 
 ### Initialization
 
@@ -31,7 +31,7 @@ exmaple CreatePhaseListAsync("phaseListTest")
 int phaseListID = await luis.CreatePhaseListAsync();
 Console.WriteLine(phaseListID);
 ```
-### Untrestanding and using the methods
+### Understanding and using the methods
 Ones you have the **PhraseList Id** you can change the _luisParams_ object to use the **PhraseListId**.
 ```csharp
 LuisParams luisParams = new LuisParams
