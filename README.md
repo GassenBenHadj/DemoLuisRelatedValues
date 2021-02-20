@@ -1,5 +1,5 @@
 # Related Values
-related values is an IA nuget package written in c# and based on Microsoft *Language Undrestanding Intelligent Service* **(LUIS)**
+related values is an AI nuget package written in c# and based on Microsoft *Language Undrestanding Intelligent Service* **(LUIS)**
 
 ## 2 steps to use Related Values
 
